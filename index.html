@@ -4,10 +4,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Console Rock Paper Scissor</title>
-    <script src="main.js"></script>
+    <script src="main.js" defer></script>
 
 </head>
 <body>
-    
+    <div class="main-container">
+        <h1>Rock Paper Scissor</h1>
+        <div class="rps-buttons">
+            <button id="rock" disabled>Rock</button>
+            <button id="paper" disabled>Paper</button>
+            <button id="scissor" disabled>Scissor</button>
+        </div>
+        <div class="game-controls">
+            <label for="numberOfRounds">Choose the number of rounds: </label>
+            <select name="number_of_rounds" id="numberOfRounds">
+                <option value="1">1</option>
+                <option value="5">5</option>
+                <option value="10">10</option>
+            </select>
+            <button class="game-button">Start</button>
+        </div>
+        <div class="result"></div>
+    </div>
 </body>
 </html>
